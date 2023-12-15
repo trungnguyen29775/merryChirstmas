@@ -1,38 +1,139 @@
+@font-face {
+    font-family: 'christmas-font';
+    src: url('/public/font/MountainsofChristmas-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .App {
-  text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: christmas-font;
+    position: relative;
+}
+.item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    transition: flex 0.5s ease;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+.item svg {
+    width: 30%;
+    margin: auto;
+    transition: transform 0.48s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item.candy {
+    background-color: #468966bf;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item.sock {
+    background-color: #fff0a5;
+    span {
+        color: #66272a;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item.leaves {
+    background-color: #ffb03b;
+    span {
+        color: rgb(102, 39, 42);
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.item.milk {
+    background-color: rgb(102, 39, 42);
+}
+.item:hover {
+    flex: 1.5;
+    cursor: pointer;
+    svg {
+        transform: rotate(30deg);
+    }
+}
+.item.milk:hover {
+    flex: 2;
+    cursor: pointer;
+    svg {
+        transform: rotate(0deg);
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item span {
+    padding-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.card-container .card {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 5%;
+    position: relative;
+    transition: display 0.5 ease;
+}
+
+.card svg:hover {
+    cursor: pointer;
+}
+
+.card.candy,
+.card.sock,
+.card.milk,
+.card.leaves {
+    color: white;
+    display: none;
+}
+
+.card.candy {
+    background-color: #468966bf;
+}
+
+.card.milk {
+    background-color: #66272a;
+}
+
+.card.sock {
+    background-color: #fff0a5;
+    color: #66272a;
+}
+
+.card.leaves {
+    background-color: #ffb03b;
+    color: #66272a;
+}
+
+.card-header {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.card-detail {
+    font-size: 20px;
+    font-family: script, cursive;
+    width: 80%;
 }
