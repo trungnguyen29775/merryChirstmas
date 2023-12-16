@@ -26,7 +26,9 @@ function App() {
             {/* Snow Effect */}
             <Snowfall style={{ zIndex: 2 }} />
             {/* Card */}
-
+            <audio autoPlay loop style={{ visibility: 'hidden' }}>
+                <source src="sound/sound.mp3" type="audio/mp3" />
+            </audio>
             <div className="card-container" style={{ display: card != '' ? 'flex' : 'none' }}>
                 <div className="card candy" style={{ display: card === 'candy' ? 'flex' : 'none' }}>
                     <FaArrowLeft
@@ -34,11 +36,14 @@ function App() {
                         style={{ fontSize: '40px', position: 'absolute', right: '20px', top: '10px' }}
                     />
 
-                    <span className="card-header">Lorem Ipsum</span>
+                    <span className="card-header">Ngọt</span>
                     <span className="card-detail">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.
+                        Tuy chỉ mới quen nhau được một thời gian, anh rất trân trọng những thời gian mình có với nhau.
+                        Anh hiểu là những chuyện cũ đã làm tổn thương em rất nhiều, cho nên em không tin tưởng anh. Anh
+                        không trách em một chút nào hết, anh chỉ cảm thấy mình cần phải thương và yêu em nhiều hơn nữa.
+                        Anh nghĩ em không cần tin lời anh nói hoàn toàn đâu, em chỉ cần biết là anh sẽ không bao giờ để
+                        em phải một mình chịu đựng những áp lực đè nén em một mình nữa, dù thế nào anh cũng sẽ tìm cách
+                        nào đó có thể giúp cho em tốt hơn. Anh yêu em ❤️
                     </span>
                 </div>
 
@@ -48,11 +53,10 @@ function App() {
                         style={{ fontSize: '40px', position: 'absolute', right: '20px', top: '10px' }}
                     />
 
-                    <span className="card-header">Lorem Ipsum</span>
+                    <span className="card-header">Ấm</span>
                     <span className="card-detail">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.
+                        Trời chuyển đông, anh muốn em phải giữ cho cơ thể thật là ấm, anh không muốn thấy em bệnh nữa
+                        đâu. Em nhớ ngủ sớm, tập thể dục dần cho cơ thê khỏe mạnh hơn. Nào gặp anh ôm cho ấm luôn hehe.
                     </span>
                 </div>
 
@@ -62,11 +66,11 @@ function App() {
                         style={{ fontSize: '40px', position: 'absolute', right: '20px', top: '10px' }}
                     />
 
-                    <span className="card-header">Lorem Ipsum</span>
+                    <span className="card-header">May</span>
                     <span className="card-detail">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.
+                        Chúc cho những điều tốt đẹp sẽ đến với em. Chuyện học tập sẽ suôn sẻ, gặp được những người bạn
+                        tốt, kể cả công việc cũng vậy. Đến phần này lại nghĩ không biết nên chúc em gì, đọc lại giống
+                        chúc tết quá. Nhớ mừng tuổi cho anh hehe.
                     </span>
                 </div>
 
@@ -76,11 +80,11 @@ function App() {
                         style={{ fontSize: '40px', position: 'absolute', right: '20px', top: '10px' }}
                     />
 
-                    <span className="card-header">Lorem Ipsum</span>
+                    <span className="card-header">Đủ</span>
                     <span className="card-detail">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.
+                        Em nhớ ăn uống đầy đủ nha, dạo trước thấy ăn uống bê bối quá. Anh nghĩ là em không cần phải lo
+                        nghĩ về cân nặng đâu, vì anh thấy em ngon vl rùi 🌚. Btw, lần nào gặp anh là anh chở đi ăn, nhớ
+                        ăn hết đó, đừng để anh ăn phụ nữa anh béo lắm rồi {':('}
                     </span>
                 </div>
             </div>
