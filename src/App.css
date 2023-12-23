@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'christmas-font';
-    src: url('/public/font/MountainsofChristmas-Regular.ttf') format('opentype');
+    src: url('/public/font/static/Montserrat-Medium.ttf') format('opentype');
+
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +14,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-family: christmas-font;
     position: relative;
 }
 .item {
@@ -134,6 +134,5 @@
 
 .card-detail {
     font-size: 20px;
-    font-family: script, cursive;
     width: 80%;
 }
